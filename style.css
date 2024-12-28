@@ -1,47 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #1a237e, #0d47a1);
-    color: #fff;
+    background: linear-gradient(135deg, #0d47a1, #004d40); /* Темно-синий и тёмно-зелёный градиент */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
-    color: #bbdefb;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    border-bottom: 2px solid #bbdefb;
-    padding-bottom: 5px;
-}
-
-p {
-    margin: 10px 0;
-}
-
-ul {
-    margin: 10px 0 20px 20px;
-}
-
-li {
-    margin-bottom: 8px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-    background: #0d47a1;
-    color: #fff;
-    padding: 10px 0;
-    border-bottom: 3px solid #1a237e;
+    background: #004d40; /* Тёмно-зелёный */
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 3px solid #00796b; /* Чуть светлее зелёный */
 }
 
 header a {
-    color: #bbdefb;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -59,10 +39,28 @@ header li {
     margin: 0 10px;
 }
 
+header #branding {
+    float: left;
+    padding-left: 20px;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
 footer {
     padding: 20px;
     margin-top: 20px;
-    color: #bbdefb;
-    background: #0d47a1;
+    color: #ffffff;
+    background: #004d40;
     text-align: center;
 }
