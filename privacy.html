@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,67 +7,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: url('https://raw.githubusercontent.com/13NotReal13/privacy-policy-persona-code/main/personaBackground.png') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(255, 255, 255, 0.5);
             margin: 0;
             padding: 0;
-            position: relative;
-            min-height: 100vh;
         }
-
-        /* Фоновое изображение */
-        body::before {
-            content: "";
-            background: url('https://github.com/13NotReal13/privacy-policy-persona-code/raw/main/personaBackground.png') no-repeat center center fixed;
-            background-size: cover;
-            opacity: 0.6;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-
-        /* Градиент для header и footer */
-        header, footer {
+        header {
             background: linear-gradient(90deg, #778387, #B6B9B6);
             color: #fff;
-            padding: 20px 0;
-            border-bottom: #00796b 0 solid;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #b0b0b0 3px solid;
         }
-
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-
-        header nav ul {
-            padding: 0;
-            list-style: none;
-        }
-
-        header nav ul li {
-            float: left;
-            display: inline;
-            padding: 0 20px;
-        }
-
-        header nav ul li a {
+        header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
-
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
         header #branding {
             float: left;
         }
-
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
         section {
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
@@ -77,15 +59,16 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-
         footer {
+            padding: 20px;
             margin-top: 20px;
-            border-top: none;
+            color: #fff;
+            background: linear-gradient(90deg, #778387, #B6B9B6);
+            border-top: #b0b0b0 3px solid;
             text-align: center;
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -106,41 +89,50 @@
         <p><strong>Effective Date:</strong> March 17, 2025</p>
 
         <h2>1. Introduction</h2>
-        <p>Welcome to the <strong>Persona Code</strong> application. Your privacy is important to us. This Privacy Policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
+        <p>Welcome to the <strong>Persona Code</strong> application. We value your privacy and are committed to protecting your personal data. This document outlines what data we collect, how we use it, and your rights regarding your information.</p>
 
         <h2>2. Collected Information</h2>
-        <p>We may collect the following data:</p>
+        <p>When using the app, we may collect the following data:</p>
         <ul>
-            <li><strong>Personal Information:</strong> Name and date of birth (used for generating personalized content).</li>
+            <li><strong>Personal Information:</strong> Name and date of birth (for code calculation).</li>
             <li><strong>Device Data:</strong> Device model, iOS version, language, and region.</li>
-            <li><strong>Usage Data:</strong> How you use the app, including viewed sections and time spent.</li>
-            <li><strong>Technical Data:</strong> Anonymous error logs for debugging purposes.</li>
+            <li><strong>Usage Data:</strong> Number of calculations, viewed sections, and time spent in the app.</li>
+            <li><strong>Technical Data:</strong> Error logs (without personal identification).</li>
         </ul>
 
-        <h2>3. How We Use Data</h2>
+        <h2>3. Use of Information</h2>
+        <p>The collected data is used for:</p>
         <ul>
-            <li>To deliver app functionality and personalized insights.</li>
-            <li>To analyze usage and improve user experience.</li>
-            <li>To provide support and resolve technical issues.</li>
-            <li>To request feedback and app reviews.</li>
+            <li>Generating calculations and displaying results.</li>
+            <li>Tracking and resolving errors.</li>
+            <li>Requesting feedback and reviews.</li>
+            <li>Providing support and responding to inquiries.</li>
         </ul>
 
         <h2>4. Push Notifications</h2>
-        <p>We may send push notifications to keep you informed about updates and new features. You can turn them off at any time via your device settings.</p>
+        <p>We may use push notifications to inform you about new features and updates. You can disable them at any time in your device settings.</p>
 
         <h2>5. Purchases and Restorations</h2>
-        <p>When making in-app purchases, we may collect:</p>
+        <p>When using the in-app purchase features, we may collect the following data:</p>
         <ul>
-            <li><strong>Purchase Data:</strong> Product ID, date and status of the transaction.</li>
-            <li><strong>Region Data:</strong> Automatically determined from the App Store region.</li>
+            <li><strong>Purchase Data:</strong> Product identifier (Product ID), transaction date and time, and transaction status (successful or failed).</li>
+            <li><strong>Region Data:</strong> The region where the purchase was made (automatically determined through the App Store).</li>
         </ul>
-        <p>Purchases are processed securely via the Apple App Store. We do not collect or store payment details.</p>
+        <p><strong>Use of Purchase Data:</strong></p>
+        <ul>
+            <li>Unlocking features and content associated with the purchase.</li>
+            <li>Restoring purchased content on other devices linked to your Apple ID.</li>
+            <li>Supporting refunds and resolving disputes.</li>
+        </ul>
+        <p><strong>Restoration of Purchases:</strong></p>
+        <p>You can restore purchases associated with your Apple ID by using the "Restore Purchases" feature in the app.</p>
+        <p>All transactions are processed exclusively through the Apple App Store. We do not store any payment information, such as credit card details. All operations are governed by Apple policies.</p>
 
         <h2>6. Copyright</h2>
-        <p>All content within <strong>Persona Code</strong> is © 2025 Ivan Semikin. Unauthorized use or distribution is prohibited.</p>
+        <p>All materials and content of the <strong>Persona Code</strong> application are copyrighted and owned by Ivan Semikin. Copying, distribution, or use of materials without permission is prohibited.</p>
 
-        <h2>7. Contact Us</h2>
-        <p>For any questions, contact us at:</p>
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions, please contact us:</p>
         <p>Email: <a href="mailto:i.semikin.94@icloud.com">i.semikin.94@icloud.com</a></p>
     </section>
 
@@ -148,5 +140,4 @@
         <p>© 2025 Ivan Semikin. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
