@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Persona Code</title>
+    <title>Support — Persona Code</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://raw.githubusercontent.com/13NotReal13/privacy-policy-persona-code/main/personaBackground.png') no-repeat center center fixed;
-            background-size: cover;
             margin: 0;
             padding: 0;
+            position: relative;
+            min-height: 100vh;
         }
+
+        /* Фоновое изображение */
+        body::before {
+            content: "";
+            background: url('https://github.com/13NotReal13/privacy-policy-persona-code/raw/main/personaBackground.png') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        header {
+
+        /* Градиент для header и footer */
+        header, footer {
             background: linear-gradient(90deg, #778387, #B6B9B6);
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #00796b 3px solid;
+            padding: 20px 0;
+            border-bottom: #00796b 0 solid;
         }
-        header a {
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        header nav ul li {
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px;
-        }
+
         header #branding {
             float: left;
         }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
+
         section {
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             color: #333;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
+
         footer {
-            padding: 20px;
             margin-top: 20px;
-            color: #fff;
-            background: linear-gradient(90deg, #778387, #B6B9B6);
-            border-top: #00796b 3px solid;
+            border-top: none;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -83,15 +102,16 @@
     </header>
 
     <section class="container">
-        <h2>Support - Persona Code</h2>
-        <p>If you have any questions or need assistance, feel free to contact us:</p>
+        <h1>Support</h1>
+        <p>If you have any questions, feedback, or need assistance with the <strong>Persona Code</strong> app, please feel free to contact us:</p>
         <ul>
             <li>Email: <a href="mailto:i.semikin.94@icloud.com">i.semikin.94@icloud.com</a></li>
         </ul>
     </section>
 
     <footer>
-        <p>© 2025 Ivan Semikin</p>
+        <p>© 2025 Ivan Semikin. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
